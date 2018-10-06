@@ -83,7 +83,6 @@ public class SplashViewModel extends ViewModel {
 
     private void fetchJobs() {
 
-        //final Map<String, List<Job>> jobListMap = new HashMap<>();
         final ArrayList<JobsMap> jobsMapArrayList = new ArrayList<>();
 
         Observable<String> jobsObservable = Observable.create(
@@ -167,13 +166,10 @@ public class SplashViewModel extends ViewModel {
                             jobList.add(new Job(id, title, webUrl, openPositions, jobLocation, jobCategory,
                                     jobClient, shiftsList));
                         }
-
-                        //jobListMap.put(key, jobList);
                         jobsMapArrayList.add(new JobsMap(key, jobList));
                     }
 
                 } catch (Exception e) {
-                    Log.e("JSON-SPLASH", e.getMessage());
                     messageLabel.set(e.getMessage());
                 }
             }
