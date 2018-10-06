@@ -61,7 +61,6 @@ public class DetailsViewModel extends ViewModel {
     }
 
     public String getPositions() {
-
         int posCount = job.getOpenPositions();
         return posCount + " " + (posCount > 1 ? "open positions " : "open position");
     }
