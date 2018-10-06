@@ -68,7 +68,6 @@ public class DetailsViewModel extends ViewModel {
 
     @SuppressLint("DefaultLocale")
     public String getAvarage() {
-
         float avarage = job.getJobClient().getRating().getAverage();
         return String.format("%.2f", avarage);
     }
