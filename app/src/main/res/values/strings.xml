@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Temper</string>
+    <string name="loading">Preparing…!</string>
+    <string name="sample_location">Amsterdam, Netherlands</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="more">More</string>
+    <string name="header">Header</string>
+</resources>
