@@ -73,6 +73,8 @@ public class DetailsViewModel extends ViewModel {
     }
 
     public void readMore(View view) {
+        Snackbar.make(view, "Opening web", Snackbar.LENGTH_SHORT)
+                .show();
         view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(job.getUrl())));
     }
 
